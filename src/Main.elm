@@ -28,7 +28,7 @@ initialModel =
 getUrls : Cmd Msg
 getUrls =
     Http.get
-        { url = "/request.json"
+        { url = "/src/request.json"
 
         -- This is the endpoint returning ["http://www.example.com?param=value","http://www.example2.com?param=value"]
         , expect = Http.expectJson GotUrls urlDecoder
